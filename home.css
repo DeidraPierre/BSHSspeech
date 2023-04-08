@@ -1,0 +1,90 @@
+body {
+    font-family: Georgia, Helvetica, sans-serif;
+    background-color: #510087;
+}
+
+.header{
+    padding: 20px;
+    text-align: center;
+    background-color: #510087;
+    color: #ffd500;
+}
+.header img{
+    width: 150px;
+    float:left;
+}
+.header h1{
+    font-size: 40px;
+    
+}
+
+.navbar a.right{
+    float: right;
+}
+/*Navigation Bar*/
+.navbar{
+    overflow: hidden;
+    background-color: blueviolet;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: yellow;
+    color: black;
+}
+/*Content*/
+*{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30%;
+    background-color: #9867C5;
+    padding: 20px;
+}
+.side h1{
+    text-align:center;
+    text-decoration:underline;
+}
+.side ul{
+    font-size: 20px;
+    color: white;
+}
+.main{
+    flex: 70%;
+    background-color: #F8FF68;
+    padding: 20px;
+}
+.main img{
+    width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Adjust to different sized screens*/
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }  
+/*footer*/
+.footer{
+    padding:20px;
+    text-align: center;
+    background: #8C76B0;
+}
