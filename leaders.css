@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;
+    background-color: #510087;
     color: white;
 }
 .profile img{
@@ -26,10 +26,10 @@ body{
 /*Navigation Bar*/
 .navbar{
     overflow: hidden;
-    background-color: violet;
+    background-color: blueviolet;
 }
 .navbar a{
-    float: left;
+    float:left;
     display: block;
     color: white;
     text-align:center;

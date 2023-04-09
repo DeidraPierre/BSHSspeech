@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, Helvetica, sans-serif;
+    font-family: myFirstFont;
     background-color: #510087;
 }
 
@@ -54,6 +54,7 @@ body {
 .side h1{
     text-align:center;
     text-decoration:underline;
+    color: white;   
 }
 .side ul{
     font-size: 20px;
@@ -87,4 +88,30 @@ body {
     padding:20px;
     text-align: center;
     background: #8C76B0;
+}
+body, html{
+    height:100%
+}
+.hero-image{
+    background-image: linear-gradient(rgba(26, 26, 115, 0.5), rgba(26, 26, 115, 0.5)), url("family.jpg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@font-face{
+    font-family: myFirstFont;
+    src: url('Alkatra-VariableFont_wght.ttf')
+
+}
+.hero-text {
+    text-align: center;
+    font-size: 35px;
+    font-family: myFirstFont;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
