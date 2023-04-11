@@ -130,3 +130,6 @@ body, html{
     transform: translate(-50%, -50%);
     color: white;
 }
+.container div a{
+    color:aliceblue;
+}
