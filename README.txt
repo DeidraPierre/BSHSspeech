@@ -64,3 +64,7 @@ commercial or otherwise.
 
 This isn't legal advice, please consider consulting a lawyer and see the full
 license for all details.
+
+
+
+membership roster, your mission, a note about speech and debate, a tournament calendar, team/school forms, news/press releases on the success of the team, and most importantly, your contact information. 
