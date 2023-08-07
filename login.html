@@ -3,23 +3,17 @@
     <link rel="stylesheet" href="login.css">
     <title>Admin Login</title>
     <body>
-        
-        <h1>Sign in to your account</h1>
-       <!-- <div class="container">
-            <p>Username</p>
-            <p>Password</p>
-        </div>
-    -->
-        <form action="action_page.php" method="post">
-            <div class="container">
-                <label for="uname"><b>Username:</b></label><br>
-                <input type="text" placeholder="Enter Username" name="uname" required><br>
-                <label for="psw"><b>Password:</b></label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required><br>
-                <button type="submit">Login</button>
-                <button type="button" class="cancelbtn">Cancel</button>
-            </div>
 
+        <h1>Sign in to your account</h1>
+        <form method = "POST" action = "login.php">
+            <label for = "text"> Username: </label>
+            <input type= "text" name= "username" value= "<?php echo $username;?>">
+            <br>
+            <label for = "text"> Password: </label>
+            <input type="text" name="password" value="">
+            <br>
+            <input type="submit" value="Log In">
         </form>
+        <span class="feedback"><?=$feedback;?></span>
     </body>
-</html>
+</html> 
