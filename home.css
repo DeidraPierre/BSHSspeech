@@ -118,7 +118,7 @@ body, html{
     height:100%
 }
 .hero-image{
-    background-image: linear-gradient(rgba(26, 26, 115, 0.5), rgba(26, 26, 115, 0.5)), url("family.jpg");
+    background-image: linear-gradient(rgba(38, 38, 114, 0.5), rgba(38, 38, 114, 0.5)), url("family.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
