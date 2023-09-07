@@ -1,6 +1,7 @@
 body {
     font-family: myFirstFont;
     background-color: #230b66;
+    color: white;
 }
 .navbar a.right{
     float: right;
@@ -30,4 +31,14 @@ body {
 .buttons a:hover{
     background-color: #ffd700;
     color: black;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+p{
+    padding: 40px;
+    text-align: left;
 }
