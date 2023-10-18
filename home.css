@@ -1,6 +1,6 @@
 body {
     font-family: myFirstFont;
-    background-color: #230b66;
+    background-color: rgb(106, 57, 185);
 }
 
 .header{
@@ -24,7 +24,7 @@ body {
 /*Navigation Bar*/
 .navbar{
     overflow: hidden;
-    background-color: #38097a;
+    background-color: rgb(112, 70, 180);
     
 }
 
@@ -41,7 +41,9 @@ body {
     color: white;
     text-align:center;
     padding: 30px 25px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 30px;
 }
 .buttons a:hover{
     background-color: #ffd700;
@@ -57,7 +59,7 @@ body {
 }
 .side{
     flex: 30%;
-    background-color: #230b66;
+    background-color: rgb(112, 70, 180);
     padding: 20px;
     border-style: solid;
     border-width: 2px;
@@ -67,22 +69,28 @@ body {
     text-align:center;
     text-decoration:underline;
     color: white;   
+    font-size: 50px;
 }
 .side ul{
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 .main{
     flex: 70%;
-    background-color: #230b66;
+    background-color: rgb(112, 70, 180);
     padding: 20px;
     color: white;
     border-style: solid;
     border-width: 2px;
     border-color:#e4d00a;
+    font-size: 25px;
+}
+.top{
+    text-align: center;
+    text-decoration: underline;
 }
 .main img{
-    width:500px;
+    width:800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -118,7 +126,7 @@ body, html{
     height:100%
 }
 .hero-image{
-    background-image: linear-gradient(rgba(38, 38, 114, 0.5), rgba(38, 38, 114, 0.5)), url("family.jpg");
+    background-image: linear-gradient(rgba(38, 38, 114, 0.121), rgba(38, 38, 114, 0.5)), url("family.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
