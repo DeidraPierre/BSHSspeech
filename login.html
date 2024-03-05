@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://bshsspeech.com/css/login.css">
     <title>Admin Login</title>
+    <div class="navbar">
+        <div class="logo-image">
+            <a href= "./homepage.html" > <img width = '80px'  src="wildcatlogo.png"> </a>
+        </div>
+        <div class="buttons">
+            <a href="./about.html">About</a>
+            <a href="./leaders.html">Leaders</a>
+            <a href="./calendar.html">Calendar</a>
+            <a href="./photos.html">Photos</a>
+            <a class = "right" href="#">Admin</a>
+        </div>
+    </div>
     <body>
 
         <h1>Sign in to your account</h1>
-        <form method = "POST" action = "login.php">
-            <label for = "text"> Username: </label>
-            <input type= "text" name= "username" value= "">
-            <br>
-            <label for = "text"> Password: </label>
-            <input type="password" name="password" value="">
-            <br>
-            <input type="submit" value="Log In">
+        <form method = "POST" action = "login.php"><br>
+            <label for = "loginU">Enter your Admin Email: </label>
+            <input type = "email" name = "user-email" id = "user-email" required><br>
+            <label for = "loginP">Enter your Password</label>
+            <input  type = "password" name = "user-pw" id = "user-pw" required><br>
+            <input type ="submit" value = "Login">
         </form>
-        <span class="feedback"><?=$feedback;?></span>
+     
     </body>
 </html> 
