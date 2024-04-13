@@ -1,9 +1,15 @@
 body {
     font-family: myFirstFont;
     background-color: #230b66;
+    margin: 0px;
 }
 .navbar a.right{
     float: right;
+}
+@font-face{
+    font-family: myFirstFont;
+    src: url('Alkatra-VariableFont_wght.ttf')
+
 }
 /*Navigation Bar*/
 .navbar{
@@ -25,7 +31,9 @@ body {
     color: white;
     text-align:center;
     padding: 30px 25px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 30px;
 }
 .buttons a:hover{
     background-color: #ffd700;
@@ -35,4 +43,39 @@ body {
 h1{
     color:white;
     text-align: center;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column 
+{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img 
+{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 800px) 
+{
+    .column 
+    {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) 
+{
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
 }
