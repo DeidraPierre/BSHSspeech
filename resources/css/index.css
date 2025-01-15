@@ -1,22 +1,38 @@
-body {
+/* Main */
+body, html
+{
+    height:100%;
+    width: 100%;
+}
+body 
+{
     font-family: myFirstFont;
-    background-color: #38097a;
+    background-color: #8d60cd;
     margin: 0px;
 }
+@font-face{
+    font-family: myFirstFont;
+    src: url('/static/Alkatra-VariableFont_wght.ttf')
 
+}
 
+/*Navigation Bar*/
 .navbar a.right
 {
     float: right;
 }
-/*Navigation Bar*/
-.navbar{
+
+.navbar
+{
     overflow: hidden;
-    background-color: #38097a;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #8d60cd;
 }
 
-.logo-image{
+.logo-image
+{
     display: block;
     overflow: visible;
     float: left;
@@ -28,61 +44,20 @@ body {
     display: block;
     color: white;
     text-align:center;
-    padding: 30px 25px;
+    padding: 20px 15px;
     margin-left: 20px;
     text-decoration: none;
     font-size: 30px;
 }
 .buttons a:hover{
-    background-color: #ffd700;
-    color: black;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #8958cd;
+    color: #480554;
 }
+
 /*Content*/
-*{
-    box-sizing: border-box;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.side{
-    flex: 30%;
-    background-color: #38097a;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color:#ffd700;
-}
-.side h1{
-    text-align:center;
-    text-decoration:underline;
-    color: white;   
-    font-size: 50px;
-}
-.side ul{
-    font-size: 25px;
-    color: white;
-}
-.main{
-    flex: 70%;
-    background-color: #38097a;
-    padding: 20px;
-    color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-color:#e4d00a;
-    font-size: 25px;
-}
-.top{
-    text-align: center;
-    text-decoration: underline;
-}
-.main img{
-    width:800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /*Adjust to different sized screens*/
 @media screen and (max-width: 700px) {
     .row {
@@ -94,9 +69,47 @@ body {
       float: none;
       width: 100%;
     }
-  }  
+  } 
+  
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+}
+.section
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.text
+{
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+.image{
+    flex: 1;
+}
+#right-pic{
+    max-width: 600px;
+}
+#left-pic{
+    max-width: 600px;
+    margin-left: 30px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+#News
+{
+    text-align: center;
+    color: white;
+}
 /*footer*/
 .footer{
+    clear: both;
     padding:20px;
     text-align:center;
     background: #170742;
@@ -111,22 +124,17 @@ body {
     flex: 1; /*grow*/
 }
 
-body, html{
-    height:100%
-}
+
 .hero-image{
-    background-image: linear-gradient(rgba(38, 38, 114, 0.121), rgba(38, 38, 114, 0.5)), url("IMG_2529.jpg");
-    height: 80%;
+    background-image:  url("/resources/images/IMG_8706.jpg");
+    height: 100%;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-@font-face{
-    font-family: myFirstFont;
-    src: url('Alkatra-VariableFont_wght.ttf')
 
-}
 .hero-text {
     text-align: center;
     -webkit-text-stroke-width:2px;

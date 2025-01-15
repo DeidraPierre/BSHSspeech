@@ -1,6 +1,6 @@
 body {
     font-family: myFirstFont;
-    background-color: #230b66;
+    background-color: #8752d1;
     margin: 0px;
 }
 .navbar a.right{
@@ -8,13 +8,16 @@ body {
 }
 @font-face{
     font-family: myFirstFont;
-    src: url('Alkatra-VariableFont_wght.ttf')
+    src: url('/static/Alkatra-VariableFont_wght.ttf')
 
 }
 /*Navigation Bar*/
 .navbar{
     overflow: hidden;
-    background-color: #38097a;
+    background-color: #8d60cd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     
 }
 
@@ -36,8 +39,10 @@ body {
     font-size: 30px;
 }
 .buttons a:hover{
-    background-color: #ffd700;
-    color: black;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #8958cd;
+    color: #480554;
 }
 /*heading*/
 h1{
@@ -78,4 +83,26 @@ h1{
       flex: 100%;
       max-width: 100%;
     }
+}
+
+/*footer*/
+.footer{
+    clear: both;
+    padding:20px;
+    text-align:center;
+    background: #170742;
+    color:aliceblue;
+    width:100%;
+}
+
+.containerF {
+    display: flex;
+}
+.containerF > div {
+    flex: 1; /*grow*/
+}
+.containerF div a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 20px;
 }
