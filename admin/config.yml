@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: DeidraPierre/BSHSspeech
+  name: git-gateway
   branch: main # or 'master'
 
 media_folder: "resources/images"
